@@ -1,0 +1,117 @@
+body{
+	color: #9e9e9e;
+	text-align: center;
+}
+.my_button{
+	background-color:#9e9e9e;
+	position: relative;	
+	width: 210px;
+	height: 40px;
+	margin: 20px auto;
+	border: solid 3px #9e9e9e;	
+}
+.my_button a{
+	text-decoration: none;	
+	color: #1d1d1d;
+}
+.my_button .up{	
+	line-height: 40px;
+	position: absolute;
+	background-color:#71A30C;
+	width: 100%;
+	height: 100%;
+	z-index: 9;
+	transition: 1s all;	
+}
+.my_button:hover .up{	
+	transition: 1s all;
+	width: 60%;	
+}
+.my_button:hover .up a{	
+	padding-left:30px;
+}
+.my_button:hover img{	
+	-webkit-animation: gate 1.5s;
+	-o-animation: gate 1.5s;
+	animation: gate 1.5s;
+}
+.my_button .down{	
+	line-height: 40px;
+	position: absolute;
+	background-color:#C7FD5C;
+ 	left:60%; 	
+	width: 40%;
+ 	height: 100%;
+	z-index: 8;
+}
+.my_button img{	
+	position: absolute;
+	left: 5px;
+	top: 50%;
+	margin-top:-15px;
+	height: 30px;
+	width: 30px;
+	z-index: 10;
+
+	-webkit-animation: gate_inverse 1.5s;
+	-o-animation: gate_inverse 1.5s;
+	animation: gate_inverse 1.5s;
+}
+
+
+
+
+
+@-webkit-keyframes gate 
+{
+	from { 
+-webkit-transform: rotate(0deg) ;
+-ms-transform: rotate(0deg) ;
+transform: rotate(0deg) ;
+	 }
+	to {		
+	-webkit-transform: rotate(360deg) ;
+	-ms-transform: rotate(360deg) ;
+	transform: rotate(360deg) ;
+	  }
+}
+
+@keyframes gate {
+	from { 
+-webkit-transform: rotate(0deg) ;
+-ms-transform: rotate(0deg) ;
+transform: rotate(0deg) ;
+	 }
+	to {		
+	-webkit-transform: rotate(360deg) ;
+	-ms-transform: rotate(360deg) ;
+	transform: rotate(360deg) ;
+	  }
+}
+
+@-webkit-keyframes gate_inverse 
+{
+	from { 
+-webkit-transform: rotate(0deg) ;
+-ms-transform: rotate(0deg) ;
+transform: rotate(0deg) ;
+	 }
+	to {		
+	-webkit-transform: rotate(-360deg) ;
+	-ms-transform: rotate(-360deg) ;
+	transform: rotate(-360deg) ;
+	  }
+}
+
+@keyframes gate_inverse {
+	from { 
+-webkit-transform: rotate(0deg) ;
+-ms-transform: rotate(0deg) ;
+transform: rotate(0deg) ;
+	 }
+	to {		
+	-webkit-transform: rotate(-360deg) ;
+	-ms-transform: rotate(-360deg) ;
+	transform: rotate(-360deg) ;
+	  }
+}

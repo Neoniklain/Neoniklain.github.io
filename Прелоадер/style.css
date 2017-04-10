@@ -1,0 +1,110 @@
+body{
+	color: #3d3d3d;
+	text-align: center;
+}
+.h1{
+	text-align: center;
+	text-shadow: 1px 1px 4px #111;
+	margin: 50px 0;
+}
+.round1,  .round1:before, .round1:after{
+	border:3px solid transparent;	
+	border-radius: 50%;
+}
+.round1{
+	width: 150px;
+	height: 150px;
+	margin: 200px auto;
+	position: relative;
+	border-top-color: #3a3;
+	-webkit-animation: spin 2s infinite linear;
+	animation: spin 2s infinite linear;
+}
+.round1:before, .round1:after{
+	content: '';
+	position: absolute;
+}
+.round1:before{
+	top:10px;
+	left:10px;
+	right: 10px;
+	bottom: 10px;
+	border-left-color: #315;
+	-webkit-animation: spin 1s infinite linear;
+	animation: spin 1s infinite linear;
+}
+.round1:after{	
+	top:23px;
+	left:23px;
+	right: 23px;
+	bottom: 23px;
+	border-right-color: #2a9;
+	-webkit-animation: spin 2s infinite linear;
+	animation: spin 2s infinite linear;
+}
+
+.round2,  .round2:before, .round2:after{
+	border:3px solid transparent;	
+	border-radius: 50%;
+}
+.round2{
+	width: 150px;
+	height: 150px;
+	margin: 200px;
+	position: relative;
+	border-top-color: #3a3;
+	-webkit-animation: spin 2s infinite linear;
+	animation: spin 2s infinite linear;
+}
+.round2:before, .round2:after{
+	content: '';
+	position: absolute;
+}
+.round2:before{
+	top:10px;
+	left:10px;
+	right: 10px;
+	bottom: 10px;
+	border-left-color: #315;
+	-webkit-animation: spin 1s infinite linear;
+	animation: spin 1s infinite linear;
+}
+.round2:after{	
+	top:23px;
+	left:23px;
+	right: 23px;
+	bottom: 23px;
+	border-right-color: #2a9;
+	-webkit-animation: spin 2s infinite linear;
+	animation: spin 2s infinite linear;
+}
+
+
+
+
+
+@-webkit-keyframes spin 
+{
+	from { 
+	-webkit-transform: rotate(0deg) ;
+	-ms-transform: rotate(0deg) ;
+	transform: rotate(0deg) ;
+	 }
+	to {		
+	-webkit-transform: rotate(360deg) ;
+	-ms-transform: rotate(360deg) ;
+	transform: rotate(360deg) ;
+	  }
+}
+@keyframes spin {
+	from { 
+	-webkit-transform: rotate(0deg) ;
+	-ms-transform: rotate(0deg) ;
+	transform: rotate(0deg) ;
+	 }
+	to {		
+	-webkit-transform: rotate(360deg) ;
+	-ms-transform: rotate(360deg) ;
+	transform: rotate(360deg) ;
+	  }
+}
