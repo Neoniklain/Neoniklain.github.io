@@ -1,0 +1,57 @@
+body{
+	padding: 0;
+	margin: 0;
+	padding-top: 5em;
+}
+
+.container{
+
+}
+
+.my-row-style{
+	margin-top: 2em;
+	background-color: #C7C7E4;
+	padding: 1em;
+}
+
+.selector-block{
+	width: 100%;
+}
+
+.selector{
+	padding: 0.5em 0.5em;
+	border: 1px solid #407970;
+	outline: none;	
+}
+
+.selector:focus
+{
+	box-shadow: 1px 0px 5px #259F98;
+}
+
+.selector:focus .check
+{
+	box-shadow: 1px 0px 5px #259F98;
+}
+
+.check{
+	border: 1px solid #407970;
+	background-color: #7FD5C8;
+	padding: 0.5em 0.5em;
+	display: inline-block;
+	position: relative;
+	left: -4px;
+	color: white;
+}
+
+.check:hover{
+	cursor: pointer;
+	box-shadow: 1px 1px 10px #259F98;
+}
+
+.option{
+	display: none;
+	border: 1px solid #7C7C7C;
+	display: block;
+	width: 100%;
+}
