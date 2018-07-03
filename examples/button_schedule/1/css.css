@@ -1,0 +1,178 @@
+html {
+	background: white;
+	text-align: center;
+	margin-top: 10em;
+}
+
+.button-schedule {
+	width: 5em;
+	height: 4em;
+	margin: auto;
+}
+
+.schedule-div {
+	position: relative;
+	z-index: 5;
+}
+
+.desc-div {
+	position: relative;
+	z-index: 0;
+}
+ 
+.outer_square {
+	background: #29384C;
+	width: 5em;
+	height: 4em;
+	display: inline-block;
+	border-radius: 5px;
+	box-shadow: 3px 3px 7px 2px #3d3d3d94;
+}
+
+.inner_square {
+	transition: 1s all;
+	display: inline-block;
+	background: #EBEDF3;
+	position: relative;
+	width: 4.3em;
+	height: 2.5em;
+	top: 3.8em;
+}
+
+.inner_days {
+	position: relative;
+	width: 3.4em;
+	left: 0.55em;
+	top: 4.6em;
+	z-index: 1;
+	border: 4px dashed #D93732;
+}
+
+.inner_days:before {
+	position: absolute;
+	content: '';
+	width: 3.4em;
+	left: -0.25em;
+	top: 0.45em;
+	z-index: 1;
+	border: 4px dashed #D93732;
+}
+
+.inner_days:after {
+	position: absolute;
+	content: '';
+	width: 3.4em;
+	left: -0.25em;
+	top: 1.15em;
+	z-index: 1;
+	border: 4px dashed #D93732;
+}
+
+.button-schedule:hover .line {
+	background: #29384C;
+}
+
+.line {
+	display: inline-block;
+	top: -4.8em;
+	background: #E94347;
+	height: 0.6em;
+	width: .1em;
+	position: relative;
+}
+
+.line-left {
+	left: -1.5em;
+}
+
+.line-middle {
+	left: 0em;
+}
+
+.line-right {
+	left: 1.5em;
+}
+
+.desc {
+	transition: 0.2s;
+	display: inline-block;
+	position: absolute;
+	z-index: 0;
+	width: 5.2em;
+	top: -5em;
+	left: .2em;
+	background: #2C3339;
+	padding: 0.5em;
+	border-radius: 5px;
+	color: white;
+	box-shadow: 3px 3px 7px 2px #3d3d3d94;
+	font-family: cursive;
+	font-size: 12px;
+}
+
+.chain {
+	transition: 0.2s;
+	display: inline-block;
+	position: absolute;
+	top: -5em;
+	left: 1em;
+	width: 0.2em;
+	height: 1em;
+	background: #29384C;
+}
+
+.desc-div:hover {
+	z-index: 6;
+}
+
+.chain-right {
+	left: 3.6em;
+}
+
+.button-schedule:hover .desc {
+	top: -1em;
+}
+
+.button-schedule:hover .chain {
+	top: -1.5em;
+}
+
+.desc:hover {
+	cursor: pointer;
+	background: #E94347;
+}
+
+
+.button-schedule:hover .outer_square {
+	background: #d93732;
+}
+
+.button-schedule:hover .inner_days {
+	transform: perspective(300px) rotateY(180deg);
+	-o-transform: perspective(300px) rotateY(180deg);
+	-ms-transform: perspective(300px) rotateY(180deg);
+	-moz-transform: perspective(300px) rotateY(180deg);
+	-webkit-transform: perspective(300px) rotateY(180deg);
+	transition: 0.4s all;
+	border: 4px dashed #29384C;
+}
+
+.button-schedule:hover .inner_days:before {
+	transform: perspective(300px) rotateY(180deg);
+	-o-transform: perspective(300px) rotateY(180deg);
+	-ms-transform: perspective(300px) rotateY(180deg);
+	-moz-transform: perspective(300px) rotateY(180deg);
+	-webkit-transform: perspective(300px) rotateY(180deg);
+	transition: 0.4s all;
+	border: 4px dashed #29384C;
+}
+
+.button-schedule:hover .inner_days:after {
+	transform: perspective(300px) rotateY(180deg);
+	-o-transform: perspective(300px) rotateY(180deg);
+	-ms-transform: perspective(300px) rotateY(180deg);
+	-moz-transform: perspective(300px) rotateY(180deg);
+	-webkit-transform: perspective(300px) rotateY(180deg);
+	transition: 0.4s all;
+	border: 4px dashed #29384C;
+}

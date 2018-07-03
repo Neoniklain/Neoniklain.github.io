@@ -1,0 +1,138 @@
+html {
+	background: white;
+	text-align: center;
+	margin-top: 10em;
+}
+
+.button-schedule {
+	width: 5em;
+	height: 4em;
+	margin: auto;
+}
+
+.schedule-div {
+	height: 100%;
+	position: relative;
+	z-index: 5;
+}
+
+.button-schedule:hover {
+	cursor: pointer;
+}
+ 
+.outer_square {
+	background: #29384C;
+	width: 5em;
+	height: 4em;
+	display: inline-block;
+	border-radius: 5px;
+	box-shadow: 3px 3px 7px 2px #3d3d3d94;
+}
+
+.inner_square {
+	transition: 1s all;
+	display: inline-block;
+	background: #EBEDF3;
+	position: relative;
+	width: 4.3em;
+	height: 2.5em;
+	top: -0.1em;
+}
+
+.inner_days {
+	transition: 0.4s all;
+	position: relative;
+	width: 3.4em;
+	left: .2em;
+	top: .3em;
+	z-index: 1;
+	border: 4px dashed #D93732;
+}
+
+.inner_days:before {
+	transition: 0.4s all;
+	position: absolute;
+	content: '';
+	width: 3.4em;
+	left: -0.25em;
+	top: 0.45em;
+	z-index: 1;
+	border: 4px dashed #D93732;
+}
+
+.inner_days:after {
+	transition: 0.4s all;
+	position: absolute;
+	content: '';
+	width: 3.4em;
+	left: -0.25em;
+	z-index: 1;
+	top: 1.15em;
+	border: 4px dashed #D93732;
+}
+
+.button-schedule:hover .line {
+	background: #29384C;
+}
+
+.line {
+	display: inline-block;
+	top: -.5em;
+	background: #E94347;
+	height: 0.6em;
+	width: .1em;
+	position: relative;
+}
+
+.line-left {
+	left: -1.5em;
+}
+
+.line-middle {
+}
+
+.line-right {
+	left: 1.5em;
+}
+
+.desc {
+	transition: 0.4s;
+	display: inline-block;
+	position: absolute;
+	z-index: 10;
+	width: 5.2em;
+	top: .2em;
+	left: -0.6em;
+	padding: 0.5em;
+	border-radius: 5px;
+	color: transparent;
+	font-family: cursive;
+	font-size: 14px;
+}
+
+.button-schedule:hover .desc {
+	color: black;
+}
+
+.button-schedule:hover .outer_square {
+	background: #d93732;
+}
+
+.button-schedule:hover .inner_days {
+	transition: 0.4s all;
+	border: 3px dashed #D93732;
+}
+
+.button-schedule:hover .inner_days:before {
+	top: -.15em;
+	left: -.2em;
+	transition: 0.4s all;
+	border: 3px dashed #D93732;
+}
+
+.button-schedule:hover .inner_days:after {
+	top: -.15em;
+	left: -.2em;
+	transition: 0.4s all;
+	border: 3px dashed #D93732;
+}
